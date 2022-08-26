@@ -28,5 +28,56 @@ Based on an externally taken bootstrap website structure, the project focuses on
 * Improved: Documentation
 * Fixed: Various Important bugs fixed.
 
+### Examples of Use
+- insert record:
+insert record:
+{
+  "token": "90937455|-31949292686629998|90943112",
+    "cmd": "PUT",
+    "dbName": "Employees",
+    "rel": "Employee-Rel",
+    "jsonStr": {
+        "id": "1001",
+        "name": "Kashish",
+        "email": "kash3132001@gmail.com",
+        "mobileno": "7023333478"
+    }
+}
+- retrieve data:
+{
+    "token": "90937455|-31949292686629998|90943112",
+    "cmd": "GET",
+    "dbName": "Employees",
+    "rel": "Employee-Rel",
+    "jsonStr":{
+        "name": "Kashish"
+    }
+}
+- update:
+{
+    "token": "90937455|-31949292686629998|90943112",
+    "cmd": "UPDATE",
+    "dbName": "Employees",
+    "rel": "Employee-Rel",
+    "jsonStr":{
+      "1": {
+      "name": "Pankhuri",
+       "email": "pankh@gmail.com",
+        "mobileno": "0009998887"
+        "id": "1000",
+        "salary": 1000000
+      }
+    }
+}
+- remove record:
+{
+    "token": "90937455|-31949292686629998|90943112",
+    "cmd": "REMOVE",
+    "dbName": "Employees",
+    "rel": "Employee-Rel",
+    "record": "1",
+}
+
+
 
 
